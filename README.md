@@ -7,7 +7,7 @@ A utility package for Google Colab that includes a custom input function.
 You can install this package using pip:
 
 ```bash
-pip install git+https://github.com/username/colabinput.git
+pip install git+https://github.com/raufoon/colabinput.git
 ```
 
 ## Usage

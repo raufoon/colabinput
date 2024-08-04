@@ -9,7 +9,7 @@ setup(
         'google-colab'
     ],
     description='A utility package for Google Colab with a custom input function',
-    author='Your Name',
-    author_email='your.email@example.com',
+    author='Raufoon Shafiq',
+    author_email='raufoon@gmail.com',
     url='https://github.com/username/colabinput',
 )

@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='colabinput',
-    version='0.1',
+    version='0.2',
     py_modules=['colabinput'],
     install_requires=[
         'IPython',

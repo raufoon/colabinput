@@ -39,7 +39,7 @@ def coinput(**elements):
       match element["type"]:
         case "text" | "password" | "email" | "url" | "number" | "date" | "time" | "datetime-local" | "month" | "week" | "color" | "search" | "file" :
             return f'''<label for="{element['id']}">{element["label"]}</label>
-                        <input id="{element['id']}" type="{element['type']}" name="{element['name']}" value="{element.get('value', '')}" step="{element.get('value','')}" placeholder="{element.get('placeholder','')}"/>'''
+                        <input id="{element['id']}" type="{element['type']}" name="{element['name']}" value="{element.get('value', '')}" step="{element.get('value','')}" placeholder="{element.get('placeholder','')}" style = "min-width: 20ch; font-family: monospace" oninput="this.style.width = ((this.value.length>=20) ? (this.value.length) : 20)+'ch';"/>'''
         case "range":
             return f'''<label for="{element['id']}">{element["label"]}</label>
                         <input id="{element['id']}" type="range" name="{element['name']}"

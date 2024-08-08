@@ -66,11 +66,12 @@ def coinput(**elements):
                                     >{element.get('value', '')}</textarea>'''
         case _:
             return "Unknown element type"
-
+    buttontext = "Enter ↩️"
     for element in elements.values():
         display(HTML(getHTML(element)))
+        buttontext = element.get("buttontext", buttontext)
     btnstyle = '"background-color: #444; color: #ccc; opacity: 1; border: 1px solid #444;"'
-    display(HTML(f'''<button id="EnterBtn" style = {btnstyle}>Enter ↩️</button>\n'''))
+    display(HTML(f'''<button id="EnterBtn" style = {btnstyle}>{buttontext}</button>\n'''))
 
     inputValuesJS = ""
     for element in elements.values():
